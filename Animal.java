@@ -78,16 +78,11 @@ class Lion extends Animal {
 }
 
 class Tiger extends Animal {
-    private boolean isStriped;
 
     public Tiger(String name, int age, boolean isStriped) {
         super(name, age, "Tiger");
-        this.isStriped = isStriped;
     }
 
-    public boolean isStriped() {
-        return isStriped;
-    }
 
 }
 
@@ -110,12 +105,16 @@ class Zoo {
         ArrayList<Animal> animals = new ArrayList<>();
         animals.add(new Hyena("ROCCO", 5, true));
         animals.add(new Hyena("CHEWY", 6, false));
+        animals.add(new Hyena("CHUNK", 9, true));
         animals.add(new Lion("SIMBA", 7, "Golden"));
+        animals.add(new Lion("SNOW", 4, "White"));
         animals.add(new Lion("SCAR", 8, "Brown"));
         animals.add(new Tiger("JEFFERY", 4, true));
+        animals.add(new Tiger("TONY", 12, true));
         animals.add(new Tiger("LEO", 3, false));
-        animals.add(new Bear("STANLY", 10, "Fish"));
+        animals.add(new Bear("YOGI", 10, "Fish"));
         animals.add(new Bear("BARRY", 12, "Berries"));
+        animals.add(new Bear("ROSS", 15, "Nuts"));
 
         HashMap<String, Integer> speciesCount = new HashMap<>();
 
